@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/media/f4tb0y/Proyectos/bot_telegram_proyecto/venv_linux"
+set -gx VIRTUAL_ENV "/home/f4tb0y/Documentos/pi_segundo_semestre/venv_linux"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
