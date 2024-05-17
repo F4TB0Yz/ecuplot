@@ -1,24 +1,20 @@
-import sys
-
+import numpy as np
 from matplotlib import pyplot
 
 class Graficador:
     def __init__(self):
         self.rango = range(-10, 15)
 
-    def funcion_1(self, x, funcion):
+    def funcion(self, x, funcion):
+        funcion = funcion.replace('x', str(x))
+        print(f'argumento funcion: {funcion}')
         return eval(funcion)
     
-    def funcion_2(self, x, funcion):
-        return funcion.replace("x", str(x))
-    
     def graficar(self, *args):
-        pyplot.plot(self.rango, [self.funcion_1(i, '3*x**3 - 2*x**2 + 3*x - 1') for i in self.rango])
+        for i in range(len(args)):
+            pyplot.plot(self.rango, [self.funcion(j, args[i]) for j in self.rango])
         pyplot.axhline(0, color="black")
         pyplot.axvline(0, color="black")
         pyplot.xlim(-10, 10)
         pyplot.ylim(-10, 10)
         pyplot.savefig("output.png")
-        pyplot.show()
-
-Graficador().graficar()
