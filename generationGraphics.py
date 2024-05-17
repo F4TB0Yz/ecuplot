@@ -1,7 +1,7 @@
 from matplotlib import pyplot
 # Función cuadrática.
 def f1(x):
-    return 3*x**3 - 2*x**2 + 3*x - 1
+    return x**2
 # Función lineal.
 def f2(x):
     return 4*x + 1

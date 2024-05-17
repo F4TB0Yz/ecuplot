@@ -6,7 +6,7 @@ from pyrogram import Client
 plugins = dict(root='plugins')
 
 bot = Client(
-    "EcundiBot",
+    "Ecuplot",
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN,
