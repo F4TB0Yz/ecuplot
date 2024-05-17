@@ -16,6 +16,7 @@ async def startComando(client, message):
     print(f'funciones reemplazadas: {funciones}')
     graficador = Graficador()
     graficador.graficar(*funciones)
+    
 
 
    
