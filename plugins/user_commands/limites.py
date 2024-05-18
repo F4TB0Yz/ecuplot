@@ -14,6 +14,7 @@ async def startComando(client, message):
     print(f'funciones sin espacio: {funciones}')
     funciones = [funcion.replace('^', '**') if '^' in funcion else funcion for funcion in funciones]
     print(f'funciones reemplazadas: {funciones}')
+    funciones = [funcion.replace('sqrt', 'np.sqrt') if 'sqrt' in funcion else funcion for funcion in funciones]
     graficador = Graficador()
     graficador.graficar(*funciones)
     
