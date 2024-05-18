@@ -1,6 +1,7 @@
 from matplotlib import pyplot
 # Función cuadrática.
 def f1(x):
+    print(x)
     print(x**4 + 5)
     return x**4 + 5
 # Función lineal.
