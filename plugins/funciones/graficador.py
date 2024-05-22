@@ -8,7 +8,8 @@ class Graficador:
         self.rango = range(-11, 15)
         self.funcion_valida = True
 
-    def funcion(self, x, funcion):
+    def funcionEval(self, x, funcion):
+        print(f'funcion: {funcion}')
         if 'np.sqrt' in funcion:
             funcion_adaptada = funcion.replace('x', f'({str(x)})')
             print(eval(funcion_adaptada))
@@ -23,7 +24,7 @@ class Graficador:
     
     def graficar(self, *args):
         for i in range(len(args)):
-            pyplot.plot(self.rango, [self.funcion(j + 1, args[i]) for j in self.rango])
+            pyplot.plot(self.rango, [self.funcionEval(j, args[i]) for j in self.rango])
         pyplot.axhline(0, color="black")
         pyplot.axvline(0, color="black")
         pyplot.xlim(-10, 10)
