@@ -26,4 +26,6 @@ Para ecuacion cubica
 /graficar 4x^3 + x
 Para ecuacion racional
 /graficar 4x/3
+Para ecuaciones de raices
+/graficar sqrt(x)
 """
