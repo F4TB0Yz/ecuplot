@@ -23,6 +23,7 @@ class Graficador:
         return eval(funcion_adaptada)
     
     def graficar(self, *args):
+        pyplot.clf()  # Limpia la figura actual 
         for i in range(len(args)):
             pyplot.plot(self.rango, [self.funcionEval(j, args[i]) for j in self.rango])
         pyplot.axhline(0, color="black")
