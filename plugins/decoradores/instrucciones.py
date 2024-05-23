@@ -28,4 +28,7 @@ Para ecuacion racional
 /graficar 4x/3
 Para ecuaciones de raices
 /graficar sqrt(x)
+
+Para agregar mas de una grafica utilizar simbolo Ampersand (&)
+Ejemplo: /graficar x & sqrt(x)
 """
