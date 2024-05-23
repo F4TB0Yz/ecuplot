@@ -13,7 +13,7 @@ async def startComando(client, message):
     funcion_valida = True
     
     funciones = []
-    mensaje_usuario = message.text[len('/graficar') + 1:]
+    mensaje_usuario = message.text[len('/graficar') + 1:].lower()
     mensaje = await filtrarMensaje(mensaje_usuario)
 
     for funcion in mensaje:
