@@ -15,5 +15,5 @@ class DecoradoresPerfil:
         self.perfil_mensaje = f"""
 𝙀𝙘𝙪𝙥𝙡𝙤𝙩                © 2024
 
-informacion usuario
+Gracias por usar EcuPlot.
 """
