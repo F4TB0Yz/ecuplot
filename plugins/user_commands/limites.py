@@ -3,9 +3,6 @@ import os
 from pyrogram import Client, filters
 from plugins.funciones.graficador import Graficador
 
-global funcion_valida
-funcion_valida = True
-
 @Client.on_message(filters.command(['graficar'], ['!','.','/']))
 async def startComando(client, message):
     user_name = message.from_user.username
@@ -20,15 +17,11 @@ async def startComando(client, message):
         funciones.append(funcion)
     print(f'mensaje final: {mensaje}')
     print(f'funciones: {funciones}')
-    graficador = Graficador()
-    try:
-        graficador.graficar(*funciones)
-    except Exception as e:
-        print(f'Error: {e}')
-        await message.reply_text('Ha ocurrido un error al graficar la función.')
-        return
+    graficador = Graficador(user_id)
 
-    await message.reply_photo('output.png')
+    graficador.graficar(*funciones)
+
+    await message.reply_photo(graficador.image_bytes)
 
 async def filtrarMensaje(mensaje):
     digitos = '0123456789'

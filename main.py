@@ -15,10 +15,6 @@ bot = Client(
 )
 
 if __name__ == '__main__':
-    try:
-        os.system('clear')
-        print("Bot en linea.")
-        bot.run()
-    except Exception as e:
-        os.system('clear')
-        print(f"Se produjo un error en el bot: \n{e}")
+    os.system('cls')
+    print("Bot en linea.")
+    bot.run()
