@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d41cdee-5996-4476-8193-da2497faa0cc" name="Cambios" comment="">
-      <change afterPath="$PROJECT_DIR$/database/db_gestor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/ecuplot.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecuplot.session" beforeDir="false" afterPath="$PROJECT_DIR$/Ecuplot.session" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecuplot.session-journal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.png" beforeDir="false" afterPath="$PROJECT_DIR$/output.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +37,8 @@
     "Python.db_gestor.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/jfdua/Documents/Ecuplot/database/ecuplot.db",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/jfdua/Documents/MeteoraBotCHK",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,7 +68,9 @@
       <workItem from="1728711161847" duration="599000" />
       <workItem from="1728783027949" duration="599000" />
       <workItem from="1728784143651" duration="606000" />
-      <workItem from="1728961267235" duration="514000" />
+      <workItem from="1728961267235" duration="1527000" />
+      <workItem from="1729035107775" duration="103000" />
+      <workItem from="1729040364810" duration="1211000" />
     </task>
     <servers />
   </component>
