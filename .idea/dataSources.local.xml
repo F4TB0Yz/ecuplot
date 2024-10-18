@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="PY-242.23339.19">
-    <data-source name="ecuplot_db.db" uuid="547c2a37-981c-4adb-bf84-249fa2d93362">
+    <data-source name="ecuplot_db.db [2]" uuid="30c9cc2f-be22-41ca-8610-a83ebe9eac6d">
       <database-info product="SQLite" version="3.45.1" jdbc-version="4.2" driver-name="SQLite JDBC" driver-version="3.45.1.0" dbms="SQLITE" exact-version="3.45.1" exact-driver-version="3.45">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>

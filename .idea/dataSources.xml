@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="ecuplot_db.db" uuid="547c2a37-981c-4adb-bf84-249fa2d93362">
+    <data-source source="LOCAL" name="ecuplot_db.db [2]" uuid="30c9cc2f-be22-41ca-8610-a83ebe9eac6d">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>

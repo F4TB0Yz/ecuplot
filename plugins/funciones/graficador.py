@@ -35,6 +35,7 @@ class Graficador:
 
         for i in range(len(args)):
             pyplot.plot(self.rango, [self.funcionEval(j, args[i]) for j in self.rango])
+            
         pyplot.axhline(0, color="black")
         pyplot.axvline(0, color="black")
         pyplot.xlim(-10, 10)
@@ -45,9 +46,7 @@ class Graficador:
 
         self.image_bytes = buf.read()
 
-        print(self.image_bytes)
-
-        self.db_ecuplot.guardar_imagen(self.user_id, self.image_bytes)
+        self.db_ecuplot.save_image_user(self.user_id, self.image_bytes)
 
 
 

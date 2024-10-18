@@ -1,6 +1,7 @@
-import os
+from io import BytesIO
 
 from pyrogram import Client, filters
+from database.db_controller import ControllerDB
 from plugins.funciones.graficador import Graficador
 
 @Client.on_message(filters.command(['graficar'], ['!','.','/']))
@@ -8,6 +9,7 @@ async def startComando(client, message):
     user_name = message.from_user.username
     user_id = message.from_user.id
     funcion_valida = True
+    db_ecuplot = ControllerDB()
     
     funciones = []
     mensaje_usuario = message.text[len('/graficar') + 1:].lower()
@@ -21,7 +23,12 @@ async def startComando(client, message):
 
     graficador.graficar(*funciones)
 
-    await message.reply_photo(graficador.image_bytes)
+    image_bytes = db_ecuplot.get_image_user(user_id)
+    # Maneja los bytes con un objeto BytesIO
+    image_file = BytesIO(image_bytes)
+    image_file.name = 'grafica_user.png'
+
+    await message.reply_photo(image_file)
 
 async def filtrarMensaje(mensaje):
     digitos = '0123456789'
